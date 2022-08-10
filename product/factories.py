@@ -5,8 +5,8 @@ from product.models import Category
 
 
 class CategoryFactory(factory.django.DjangoModelFactory):
-    title = factory.Fakeraker('pystr')
-    slug = factory.Fakeraker('pystr')
+    title = factory.Faker('pystr')
+    slug = factory.Faker('pystr')
     description = factory.Faker('pystr')
     active = factory.Iterator([True, False])
 
