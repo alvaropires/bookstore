@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
                  '127.0.0.1',
-                 'https://alvaro-bookstore-api.herokuapp.com/',
+                 'https://alvaro-bookstore-api.herokuapp.com',
                  ]
 
 
