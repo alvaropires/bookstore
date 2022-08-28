@@ -25,7 +25,10 @@ SECRET_KEY = "django-insecure-7uyv^aa(hh+e+^k0yh4i)qfdet0#8r8&1(^n^(l&w7!c%%smem
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',
+                 '127.0.0.1',
+                 'https://alvaro-bookstore-api.herokuapp.com/',
+                 ]
 
 
 # Application definition
@@ -47,6 +50,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
